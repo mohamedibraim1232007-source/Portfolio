@@ -1,48 +1,382 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <title>Portfolio-Mohamed</title>
-</head>
-<body>
-    <header>
-        <a href="#" class="logo">Mohamed</a>
-        <nav>
-            <a href="#" class="active">Home</a>
-            <a href="#">Services</a>
-            <a href="#">Skills</a>
-            <a href="#">Education</a>
-            <a href="#">Experience</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
-
-    <section class="home">
-        <div class="home-img">
-            <img src="./img/a7860cbbf06f03f750d6d14f3825946b.jpg" alt="Profile Image">
-        </div>
-        <div class="home-content">
-            <h1>Hi, I'm <span>Mohamed</span></h1>
-            <h3 class="typing-text">I'm a <span class="typewriter"></span></h3>
-            
-            <p>Aspiring Front-End Developer seeking opportunities to build modern, responsive, and user-friendly websites using
-                HTML, CSS, JavaScript, and modern UI frameworks. Highly motivated to learn, grow, and contribute to real-world
-                projects.</p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/profile.php?id=61582306379430"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://discord.com/channels/mohamed12327"><i class="fa-brands fa-discord"></i></a>
-                <a href="https://github.com/mohamedibraim1232007-source"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.instagram.com/mohamedibrahem5_7/" ><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/mohamed-ibrahim-201638378?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin-in"></i></a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="./style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        />
+        <title>Portfolio-Mohamed</title>
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo" data-aos="zoom-in" data-aos-duration="1500"
+                >Mohamed</a
+            >
+            <nav
+                data-aos="fade-down"
+                data-aos-duration="1500"
+                data-aos-delay="300"
+            >
+                <a href="#top" class="active">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#skills">Experience</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <a href="#" class="btn">Hire Me</a>
-        </div>
-    </section>
+        </header>
 
+        <section class="home">
+            <div class="home-img" data-aos="zoom-in" data-aos-duration="1500">
+                <img
+                    src="./img/a7860cbbf06f03f750d6d14f3825946b.jpg"
+                    alt="Profile Image"
+                />
+            </div>
+            <div class="home-content">
+                <h1
+                    data-aos="fade-left"
+                    data-aos-duration="1500"
+                    data-aos-delay="700"
+                >
+                    Hi, I'm <span>Mohamed</span>
+                </h1>
+                <h3
+                    class="typing-text"
+                    data-aos="fade-right"
+                    data-aos-duration="1500"
+                    data-aos-delay="900"
+                >
+                    I'm a <span class="typewriter"></span>
+                </h3>
 
-    <script src="./script.js"></script>
-</body>
+                <p
+                    data-aos="fade-down"
+                    data-aos-duration="1500"
+                    data-aos-delay="1100"
+                >
+                    Aspiring Front-End Developer seeking opportunities to build
+                    modern, responsive, and user-friendly websites using HTML,
+                    CSS, JavaScript, and modern UI frameworks. Highly motivated
+                    to learn, grow, and contribute to real-world projects.
+                </p>
+                <div
+                    class="social-icons"
+                    data-aos="fade-up"
+                    data-aos-duration="1500"
+                    data-aos-delay="1500"
+                >
+                    <a
+                        href="https://www.facebook.com/profile.php?id=61582306379430"
+                        target="_blank"
+                        ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                    <a
+                        href="https://discord.com/channels/mohamed12327"
+                        target="_blank"
+                        ><i class="fa-brands fa-discord"></i
+                    ></a>
+                    <a
+                        href="https://github.com/mohamedibraim1232007-source"
+                        target="_blank"
+                        ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a
+                        href="https://www.instagram.com/mohamedibrahem5_7/"
+                        target="_blank"
+                        ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                    <a
+                        href="https://www.linkedin.com/in/mohamed-ibrahim-201638378?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                        target="_blank"
+                        ><i class="fa-brands fa-linkedin-in"></i
+                    ></a>
+                </div>
+                <a href="#" class="btn">Hire Me</a>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="content">
+                <div class="title" data-aos="fade-up" data-aos-duration="1500">
+                    <span>About Me</span>
+                </div>
+                <div class="about-details">
+                    <div
+                        class="left"
+                        data-aos="fade-right"
+                        data-aos-duration="1500"
+                        data-aos-delay="200"
+                    >
+                        <img
+                            src="./img/a7860cbbf06f03f750d6d14f3825946b.jpg"
+                            alt="img-portfolio"
+                        />
+                    </div>
+
+                    <div class="right">
+                        <div
+                            class="topic"
+                            data-aos="fade-left"
+                            data-aos-duration="1500"
+                            data-aos-delay="200"
+                        >
+                            Front-End Developer
+                        </div>
+                        <p
+                            data-aos="fade-down"
+                            data-aos-duration="1500"
+                            data-aos-delay="300"
+                        >
+                            Aspiring Front-End Developer seeking opportunities
+                            to build modern, responsive, and user-friendly
+                            websites using HTML, CSS, JavaScript, and modern UI
+                            frameworks. Highly motivated to learn, grow, and
+                            contribute to real-world projects.
+                        </p>
+                    </div>
+
+                    <div
+                        class="button"
+                        data-aos="zoom-in-right"
+                        data-aos-duration="1500"
+                        data-aos-delay="400"
+                    >
+                        <button>Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="Skills" id="skills">
+            <div class="content">
+                <div class="title" data-aos="fade-up" data-aos-duration="1200">
+                    <span>My Skills</span>
+                </div>
+                <div class="skills-details">
+                    <div class="text">
+                        <div
+                            class="topic"
+                            data-aos="fade-right"
+                            data-aos-duration="1200"
+                            data-aos-delay="200"
+                        >
+                            Front-End Developer
+                        </div>
+                        <p
+                            data-aos="fade-right"
+                            data-aos-duration="1200"
+                            data-aos-delay="400"
+                        >
+                            Aspiring Front-End Developer seeking opportunities
+                            to build modern, responsive, and user-friendly
+                            websites using HTML, CSS, JavaScript, and modern UI
+                            frameworks. Highly motivated to learn, grow, and
+                            contribute to real-world projects.
+                        </p>
+                        <div
+                            class="experience"
+                            data-aos="fade-up"
+                            data-aos-duration="1200"
+                            data-aos-delay="600"
+                        >
+                            <div class="num">2</div>
+                            <div class="exp">
+                                Years Of <br />
+                                Experience
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-boxes">
+                        <div class="boxes">
+                            <div
+                                class="topic"
+                                data-aos="fade-right"
+                                data-aos-duration="1200"
+                                data-aos-delay="150"
+                            >
+                                HTML
+                            </div>
+                            <div
+                                class="per"
+                                data-aos="zoom-in"
+                                data-aos-duration="1200"
+                                data-aos-delay="300"
+                            >
+                                90%
+                            </div>
+                        </div>
+
+                        <div class="boxes">
+                            <div
+                                class="topic"
+                                data-aos="fade-right"
+                                data-aos-duration="1200"
+                                data-aos-delay="150"
+                            >
+                                CSS
+                            </div>
+                            <div
+                                class="per"
+                                data-aos="zoom-in"
+                                data-aos-duration="1200"
+                                data-aos-delay="300"
+                            >
+                                80%
+                            </div>
+                        </div>
+
+                        <div class="boxes">
+                            <div
+                                class="topic"
+                                data-aos="fade-right"
+                                data-aos-duration="1200"
+                                data-aos-delay="450"
+                            >
+                                JavaScript
+                            </div>
+                            <div
+                                class="per"
+                                data-aos="zoom-in"
+                                data-aos-duration="1200"
+                                data-aos-delay="600"
+                            >
+                                70%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="title" data-aos="fade-up" data-aos-duration="1200">
+                <span>My Services</span>
+            </div>
+            <div class="content">
+                <div class="boxes">
+                    <div
+                        class="box"
+                        data-aos="fade-up"
+                        data-aos-duration="1500"
+                        data-aos-delay="200"
+                    >
+                        <div class="icon"><i class="fas fa-desktop"></i></div>
+                        <div class="topic">Web Development</div>
+                        <p>
+                            Aspiring Front-End Developer seeking opportunities
+                            to build modern, responsive, and user-friendly
+                            websites using HTML, CSS, JavaScript, and modern UI
+                            frameworks.
+                        </p>
+                    </div>
+
+                    <div
+                        class="box highlight"
+                        data-aos="fade-up"
+                        data-aos-duration="1500"
+                        data-aos-delay="400"
+                    >
+                        <div class="icon"><i class="fas fa-desktop"></i></div>
+                        <div class="topic">Web Development</div>
+                        <p>
+                            Aspiring Front-End Developer seeking opportunities
+                            to build modern, responsive, and user-friendly
+                            websites using HTML, CSS, JavaScript, and modern UI
+                            frameworks.
+                        </p>
+                    </div>
+
+                    <div
+                        class="box"
+                        data-aos="fade-up"
+                        data-aos-duration="1500"
+                        data-aos-delay="600"
+                    >
+                        <div class="icon"><i class="fas fa-desktop"></i></div>
+                        <div class="topic">Web Development</div>
+                        <p>
+                            Aspiring Front-End Developer seeking opportunities
+                            to build modern, responsive, and user-friendly
+                            websites using HTML, CSS, JavaScript, and modern UI
+                            frameworks.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="title" data-aos="fade-up" data-aos-duration="1500">
+                <span>Contact Me</span>
+            </div>
+            <div class="text">
+                <div
+                    class="topic"
+                    data-aos="fade-right"
+                    data-aos-duration="1500"
+                    data-aos-delay="200"
+                >
+                    Have Any Projects?
+                </div>
+                <div
+                    class="button"
+                    data-aos="zoom-in"
+                    data-aos-duration="1500"
+                    data-aos-delay="400"
+                >
+                    <button>Let's Chat</button>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="text">
+                <span>&copy; 2026 Engineer Mohammed. All rights reserved.</span>
+            </div>
+            <div class="footer-icon">
+                <a
+                    href="https://www.facebook.com/profile.php?id=61582306379430"
+                    target="_blank"
+                    ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a
+                    href="https://discord.com/channels/mohamed12327"
+                    target="_blank"
+                    ><i class="fa-brands fa-discord"></i
+                ></a>
+                <a
+                    href="https://github.com/mohamedibraim1232007-source"
+                    target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                ></a>
+                <a
+                    href="https://www.instagram.com/mohamedibrahem5_7/"
+                    target="_blank"
+                    ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a
+                    href="https://www.linkedin.com/in/mohamed-ibrahim-201638378?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({ offset: 0 });
+        </script>
+        <script src="./script.js"></script>
+    </body>
 </html>

@@ -34,3 +34,18 @@ function type() {
     setTimeout(type, typeSpeed);
 }
 document.addEventListener("DOMContentLoaded", type);
+
+const hamburger = document.getElementById("hamburger");
+const nav = document.querySelector("nav");
+
+hamburger.addEventListener("click", () => {
+    nav.classList.toggle("active");
+    hamburger.classList.toggle("active");
+});
+const navLinks = document.querySelectorAll("nav a");
+navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+        nav.classList.remove("active");
+        hamburger.classList.remove("active");
+    });
+});
