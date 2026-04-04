@@ -1,0 +1,36 @@
+const textElement = document.querySelector(".typewriter");
+const words = [
+    "Web Developer",
+    "Frontend Developer",
+    "Web Designer",
+    "Programmer",
+];
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+let typeSpeed = 200;
+
+function type() {
+    const currentWord = words[wordIndex];
+
+    if (isDeleting) {
+        textElement.textContent = currentWord.substring(0, charIndex - 1);
+        charIndex--;
+        typeSpeed = 100;
+    } else {
+        textElement.textContent = currentWord.substring(0, charIndex + 1);
+        charIndex++;
+        typeSpeed = 200;
+    }
+
+    if (!isDeleting && charIndex === currentWord.length) {
+        isDeleting = true;
+        typeSpeed = 2000;
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        typeSpeed = 500;
+    }
+    setTimeout(type, typeSpeed);
+}
+document.addEventListener("DOMContentLoaded", type);

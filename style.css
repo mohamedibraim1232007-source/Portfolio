@@ -15,6 +15,34 @@ html {
     font-size: 62.5%;
 }
 
+::-webkit-scrollbar {
+
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+
+    background: black;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: #b74b4b;
+
+    border-radius: 12px;
+
+    transition: all 0.3s ease;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+    background: #b74b4b;
+
+}
+
 body {
     width: 100%;
     min-height: 100vh;
@@ -121,7 +149,9 @@ span {
     margin-bottom: 1rem;
 }
 .home-content p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: white;
     
 }
 .home-img {
@@ -184,55 +214,17 @@ span {
     color: #b74b4b;
     box-shadow: 0 0 25px #b74b4b;
 }
-.typing-text {
-    font-size: 34px;
-    font-weight: 600;
-    min-width: 280px;
+
+
+.typewriter {
+    border-right: 3px solid #b74b4b; 
+    padding-right: 5px;
+    animation: blink 0.8s infinite;
 }
 
-.typing-text span {
-    position: relative;
-}
-
-.typing-text span::before {
-    content: "Web Developer";
-    animation: word 10s infinite;
-}
-
-.typing-text span::after {
-    content: '';
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    border-left: 3px solid #b74b4b;
-    right: -8px;
-    background-color: black;
-    animation: cursor 0.8s infinite, typing 2s steps(14) infinite;
-}
-
-@keyframes cursor {
-    to { border-left: 3px solid #b74b4b; }
-}
-@keyframes typing {
-    0%, 100% { left: 0%; }
-    50% { left: 100%; }
-}
-@keyframes words {
-    0%,20%{
-        content: "Web Developer";
-    }
-    21%,40%{
-        content: "Frontend Developer";
-    }
-    41%,60%{
-        content: "Web Designer";
-    }
-    61%,80%{
-        content: "Software Developer";
-    }
-    81%,100%{
-        content: "Programmer";
-    }
+@keyframes blink {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: #b74b4b; }
 }
 
 @media (max-width: 1000px) {
@@ -260,3 +252,4 @@ span {
         font-size: 3rem;
     }
 }
+
