@@ -49,3 +49,13 @@ navLinks.forEach((link) => {
         hamburger.classList.remove("active");
     });
 });
+function startDownload() {
+    const link = document.createElement("a");
+
+    link.href = "./Mohamed_Ibrahim_CV.pdf";
+    link.download = "Mohamed_Ibrahim_CV.pdf";
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
