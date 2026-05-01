@@ -50,14 +50,7 @@ navLinks.forEach((link) => {
     });
 });
 function startDownload() {
-    const link = document.createElement("a");
-
-    link.href = "./Mohamed_Ibrahim_CV.pdf";
-    link.download = "Mohamed_Ibrahim_CV.pdf";
-
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    window.open("./Mohamed_Ibrahim_CV.pdf", "_blank");
 }
 
 let lastScrollY = window.scrollY;
